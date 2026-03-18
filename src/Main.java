@@ -38,30 +38,29 @@ public class Main {
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
 
-        /*System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);*/
-
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("AlmavivA - Back-end com Java & QA");
-        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
+        bootcamp.setDescricao("Descrição Bootcamp Java Developer e QA");
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(curso3);
+        bootcamp.getConteudos().add(curso4);
+        bootcamp.getConteudos().add(curso5);
         bootcamp.getConteudos().add(mentoria);
 
         Dev devNatalia = new Dev();
         devNatalia.setNome("Natália");
         devNatalia.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Natália:" + devNatalia.getConteudosInscritos());
+        System.out.println("\nConteúdos Inscritos Natália:" + devNatalia.getConteudosInscritos());
         devNatalia.progredir();
         devNatalia.progredir();
         devNatalia.progredir();
-        System.out.println("-");
+        System.out.println("--------");
         System.out.println("Conteúdos Inscritos Natália:" + devNatalia.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos Natália:" + devNatalia.getConteudosConcluidos());
         System.out.println("XP:" + devNatalia.calcularTotalXp());
 
-        System.out.println("-------");
+        System.out.println("\n---------------------------------------------------------------\n");
 
         Dev devElias = new Dev();
         devElias.setNome("Elias");
@@ -69,7 +68,7 @@ public class Main {
         System.out.println("Conteúdos Inscritos Elias:" + devElias.getConteudosInscritos());
         devElias.progredir();
         devElias.progredir();
-        System.out.println("-");
+        System.out.println("--------");
         System.out.println("Conteúdos Inscritos Elias:" + devElias.getConteudosInscritos());
         System.out.println("Conteúdos Concluidos Elias:" + devElias.getConteudosConcluidos());
         System.out.println("XP:" + devElias.calcularTotalXp());
